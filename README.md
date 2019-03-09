@@ -1,1 +1,19 @@
-# RaspberryPi_CardReader
+# Raspberry Piを利用してカード情報をSlackで通知する
+Raspberry Piとカードリーダーを利用して読ませたカード情報と  
+カード情報とアカウントを紐付ける製品から得られる情報をSlack通知するというものです。  
+※カード情報のみを通知する場合はカード情報が登録されている製品は必要ありません。
+クエリ部分やDB接続情報など適宜必要な情報を自環境用に置き換えてください。
+
+### 必要なもの
+- Raspberry Pi 3 Model B
+- 非接触カードリーダーPaSoRi RC-S380（SONY製）
+- カード情報登録製品
+  - こちらはなくても問題なし
+
+### 事前準備
+- Raspberry PiにNode.jsとnpmをインストールすること
+
+### 実行方法
+```
+sudo su node app.js
+```
